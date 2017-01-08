@@ -13,7 +13,7 @@ I plan to write [fizzbuzz](https://en.wikipedia.org/wiki/Fizz_buzz) in as many p
 - [ ] Haskell
 - [ ] Java
 - [x] Javascript
-- [ ] Lisp
+- [x] Lisp
 - [ ] Pearl
 - [ ] PHP
 - [ ] Python
@@ -33,3 +33,6 @@ Then executed `./fuzzbuzz`
 
 ### Javascript
 Run with node v6.2.2 `node fizzbuzz.js`
+
+### Lisp
+Run with clisp `clisp fizzbuzz.lisp`
