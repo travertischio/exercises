@@ -12,7 +12,7 @@ I plan to write [fizzbuzz](https://en.wikipedia.org/wiki/Fizz_buzz) in as many p
 - [ ] Go
 - [ ] Haskell
 - [ ] Java
-- [ ] Javascript
+- [x] Javascript
 - [ ] Lisp
 - [ ] Pearl
 - [ ] PHP
