@@ -23,3 +23,13 @@ I plan to write [fizzbuzz](https://en.wikipedia.org/wiki/Fizz_buzz) in as many p
 - [ ] SQL
 
 As I finish this list I will hopefully be able to explore these languages more fully elsewhere as well as adding other languages to the list.
+
+## Execution Notes
+Description of any compiling or execution details while running these scripts.
+
+### C
+Compiled with gcc `gcc -o fizzbuzz fizzbuzz.c`
+Then executed `./fuzzbuzz`
+
+### Javascript
+Run with node v6.2.2 `node fizzbuzz.js`
