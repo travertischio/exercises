@@ -12,7 +12,7 @@ I plan to write [fizzbuzz](https://en.wikipedia.org/wiki/Fizz_buzz) in as many p
 - [ ] D
 - [ ] Erlang
 - [ ] Go
-- [ ] Haskell
+- [x] Haskell
 - [ ] Java
 - [x] Javascript
 - [x] Lisp
@@ -31,6 +31,10 @@ Description of any compiling or execution details while running these scripts.
 
 ### C
 Compiled with gcc `gcc -o fizzbuzz fizzbuzz.c`
+Then executed `./fuzzbuzz`
+
+### Haskell
+Compiled with ghc `ghc -o fizzbuzz fizzbuzz.hs`
 Then executed `./fuzzbuzz`
 
 ### Javascript
