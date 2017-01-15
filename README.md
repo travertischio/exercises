@@ -19,7 +19,7 @@ I plan to write [fizzbuzz](https://en.wikipedia.org/wiki/Fizz_buzz) in as many p
 - [ ] Pearl
 - [ ] PHP
 - [x] Python
-- [ ] Ruby
+- [x] Ruby
 - [ ] Rust
 - [ ] Scala
 - [ ] SQL
@@ -41,3 +41,6 @@ Run with clisp `clisp fizzbuzz.lisp`
 
 ### Python
 Run on Python 3 `python3 fizzbuzz.py`
+
+### Ruby
+Run with Ruby `ruby fizzbuzz.rb`
