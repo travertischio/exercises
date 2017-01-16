@@ -17,7 +17,7 @@ I plan to write [fizzbuzz](https://en.wikipedia.org/wiki/Fizz_buzz) in as many p
 - [x] Javascript
 - [x] Lisp
 - [ ] Pearl
-- [ ] PHP
+- [x] PHP
 - [x] Python
 - [x] Ruby
 - [ ] Rust
@@ -42,6 +42,9 @@ Run with node v6.2.2 `node fizzbuzz.js`
 
 ### Lisp
 Run with clisp `clisp fizzbuzz.lisp`
+
+### PHP
+Run on PHP `php fizzbuzz.php`
 
 ### Python
 Run on Python 3 `python3 fizzbuzz.py`
