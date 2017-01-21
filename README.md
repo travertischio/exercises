@@ -16,7 +16,7 @@ I plan to write [fizzbuzz](https://en.wikipedia.org/wiki/Fizz_buzz) in as many p
 - [x] Java
 - [x] Javascript
 - [x] Lisp
-- [ ] Pearl
+- [ ] Perl
 - [x] PHP
 - [x] Python
 - [x] Ruby
