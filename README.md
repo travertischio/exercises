@@ -13,7 +13,7 @@ I plan to write [fizzbuzz](https://en.wikipedia.org/wiki/Fizz_buzz) in as many p
 - [ ] Erlang
 - [ ] Go
 - [x] Haskell
-- [ ] Java
+- [x] Java
 - [x] Javascript
 - [x] Lisp
 - [ ] Pearl
@@ -36,6 +36,10 @@ Then executed `./fuzzbuzz`
 ### Haskell
 Compiled with ghc `ghc -o fizzbuzz fizzbuzz.hs`
 Then executed `./fuzzbuzz`
+
+### Haskell
+Compiled with javac `javac Fizzbuzz.java`
+Then executed with java `java Fizzbuzz`
 
 ### Javascript
 Run with node v6.2.2 `node fizzbuzz.js`
