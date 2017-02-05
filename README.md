@@ -8,7 +8,7 @@ I plan to write [fizzbuzz](https://en.wikipedia.org/wiki/Fizz_buzz) in as many p
 
 - [x] C
 - [ ] C++
-- [ ] C#
+- [x] C#
 - [ ] D
 - [ ] Erlang
 - [ ] Go
@@ -32,6 +32,10 @@ Description of any compiling or execution details while running these scripts.
 ### C
 Compiled with gcc `gcc -o fizzbuzz fizzbuzz.c`
 Then executed `./fuzzbuzz`
+
+### C#
+Compiled with mcs `mcs fizzbuzz.cs`
+Then executed with mono `mono fuzzbuzz.exe`
 
 ### Haskell
 Compiled with ghc `ghc -o fizzbuzz fizzbuzz.hs`
