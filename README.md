@@ -9,7 +9,7 @@ I plan to write [fizzbuzz](https://en.wikipedia.org/wiki/Fizz_buzz) in as many p
 - [x] C
 - [ ] C++
 - [x] C#
-- [ ] D
+- [x] D
 - [ ] Erlang
 - [ ] Go
 - [x] Haskell
@@ -36,6 +36,10 @@ Then executed `./fuzzbuzz`
 ### C#
 Compiled with mcs `mcs fizzbuzz.cs`
 Then executed with mono `mono fuzzbuzz.exe`
+
+### D
+Compiled with dmd `dmd fizzbuzz`
+Then executed `./fuzzbuzz`
 
 ### Haskell
 Compiled with ghc `ghc -o fizzbuzz fizzbuzz.hs`
