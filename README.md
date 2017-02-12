@@ -20,7 +20,7 @@ I plan to write [fizzbuzz](https://en.wikipedia.org/wiki/Fizz_buzz) in as many p
 - [x] PHP
 - [x] Python
 - [x] Ruby
-- [ ] Rust
+- [x] Rust
 - [ ] Scala
 - [ ] SQL
 
@@ -66,3 +66,7 @@ Run on Python 3 `python3 fizzbuzz.py`
 
 ### Ruby
 Run with Ruby `ruby fizzbuzz.rb`
+
+### Rust
+Compiled with rustc `rustc fizzbuzz.rs`
+Then executed `./fuzzbuzz`
