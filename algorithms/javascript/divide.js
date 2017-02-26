@@ -14,6 +14,16 @@ const processData = (input) => {
   let numerator = inArr[0]
   const denominator = inArr[1]
   let divisor = 1
-  for (; numerator < denominator; numerator = numerator + numerator, divisor++) {}
-  console.log(divisor)
+  let n = numerator
+  for (; n < denominator; n = n + numerator, divisor++) {}
+  let remainder = 0
+  if (n !== denominator) {
+    divisor--
+    remainder = denominator - (n - numerator)
+  }
+  if (remainder) {
+    console.log(divisor + ' Remainder ' + remainder)
+  } else {
+    console.log(divisor)
+  }
 }
