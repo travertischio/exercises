@@ -18,7 +18,7 @@ func main() {
 	denominator, _ := strconv.ParseInt(strD, 10, 32)
 	divisor, num := 1, numerator
 	for ; num < denominator; divisor++ {
-		num = num + numerator
+		num += numerator
 	}
 	if num != denominator {
 		divisor--
