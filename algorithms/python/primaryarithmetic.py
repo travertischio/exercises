@@ -7,7 +7,7 @@ def carry(twoNumbers):
     longerLength = len(firstNumber)
     if len(firstNumber) < len(secondNumber):
         longerLength = len(secondNumber)
-    for i in range(0, longerLength - 1):
+    for i in range(0, longerLength):
         first = 0
         second = 0
         if i < len(firstNumber):
@@ -21,15 +21,10 @@ def carry(twoNumbers):
         else:
             previousCarry = 0
 
-        if i >= len(firstNumber) or i >= len(secondNumber):
-            if previousCarry == 1 and (first == 9 or second == 9):
-                previousCarry = 1
-                carrys += 1
-
     print(carrys)
 
 
 carry(['123', '456'])
 carry(['555', '555'])
 carry(['123', '594'])
-carry(['12338292', '594'])
+carry(['9248', '832'])
