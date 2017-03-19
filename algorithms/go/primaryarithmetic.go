@@ -43,12 +43,8 @@ func carry(twoNumbers []string) {
 }
 
 func main() {
-  x := []string{"123", "456"}
-  carry(x)
-  x = []string{"555", "555"}
-  carry(x)
-  x = []string{"123", "594"}
-  carry(x)
-  x = []string{"9248", "832"}
-  carry(x)
+  carry([]string{"123", "456"})
+  carry([]string{"555", "555"})
+  carry([]string{"123", "594"})
+  carry([]string{"9248", "832"})
 }
