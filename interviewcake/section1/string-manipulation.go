@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"sort"
+	"strings"
 )
 
 func main() {
@@ -12,6 +13,8 @@ func main() {
 	fmt.Println(meetingsResult)
 
 	fmt.Println(stringReverse("cash"))
+
+	fmt.Println(reverseWords("hello sir this is the captain"))
 }
 
 type Meeting struct {
@@ -51,4 +54,15 @@ func stringReverse(input string) string {
 	}
 
 	return string(inputBytes)
+}
+
+func reverseWords(words string) string {
+	reversedString := stringReverse(words)
+
+	reversedStringArray := strings.Split(reversedString, " ")
+	for i := 0; i < len(reversedStringArray); i++ {
+		reversedStringArray[i] = stringReverse(reversedStringArray[i])
+	}
+
+	return strings.Join(reversedStringArray, " ")
 }
