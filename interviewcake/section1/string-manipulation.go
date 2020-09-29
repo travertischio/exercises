@@ -8,13 +8,15 @@ import (
 
 func main() {
 	meetings := []Meeting{{1, 2}, {3, 6}, {2, 5}, {7, 9}}
-
-	meetingsResult := mergeRanges(meetings)
-	fmt.Println(meetingsResult)
+	fmt.Println(mergeRanges(meetings))
 
 	fmt.Println(stringReverse("cash"))
 
 	fmt.Println(reverseWords("hello sir this is the captain"))
+
+	myOrder := []int{3, 4, 6, 10, 11, 15}
+	alicesOrder := []int{1, 5, 8, 12, 14, 19}
+	fmt.Println(mergeSortedArrays(myOrder, alicesOrder))
 }
 
 type Meeting struct {
@@ -65,4 +67,29 @@ func reverseWords(words string) string {
 	}
 
 	return strings.Join(reversedStringArray, " ")
+}
+
+func mergeSortedArrays(first []int, second []int) []int {
+	var result []int
+
+	i := 0
+	j := 0
+
+	for i < len(first) && j < len(second) {
+		if first[i] < second[j] {
+			result = append(result, first[i])
+			i++
+		} else {
+			result = append(result, second[j])
+			j++
+		}
+	}
+
+	if i == len(first) {
+		result = append(result, second[j:]...)
+	} else {
+		result = append(result, first[i:]...)
+	}
+
+	return result
 }
