@@ -17,6 +17,12 @@ func main() {
 	myOrder := []int{3, 4, 6, 10, 11, 15}
 	alicesOrder := []int{1, 5, 8, 12, 14, 19}
 	fmt.Println(mergeSortedArrays(myOrder, alicesOrder))
+
+
+	takeOutOrders := []int{1, 3, 5}
+	dineInOrders := []int{2, 4, 6}
+	servedOrders := []int{1, 2, 4, 6, 5, 3}
+	fmt.Println(checkServiceOrder(takeOutOrders, dineInOrders, servedOrders))
 }
 
 type Meeting struct {
@@ -92,4 +98,25 @@ func mergeSortedArrays(first []int, second []int) []int {
 	}
 
 	return result
+}
+
+func checkServiceOrder(takeOutOrders []int, dineInOrders []int, servedOrders []int) bool  {
+	i := 0
+	j := 0
+
+	for _, e := range(servedOrders) {
+		if takeOutOrders[i] == e {
+			if i < len(takeOutOrders)-1 {
+				i++
+			}
+		} else if dineInOrders[j] == e {
+			if j < len(dineInOrders)-1 {
+				j++
+			}
+		} else {
+			return false
+		}
+	}
+
+	return true
 }
