@@ -2,11 +2,15 @@ package main
 
 import (
 	"fmt"
+	"strings"
 )
 
 func main() {
 	fmt.Println(findOptimalMovies(248, []int{60, 140, 169, 94, 108}))
+
 	fmt.Println(checkPalindrome("racecar"))
+
+	fmt.Println(createWordCloud("We came, we saw, we conquered... then we ate Bill's (Mille-Feuille) cake."))
 }
 
 func findOptimalMovies(flightLength int, movieLengths []int) bool {
@@ -41,4 +45,20 @@ func checkPalindrome(input string) bool {
 	}
 
 	return true
+}
+
+func createWordCloud(input string) map[string]int {
+	result := make(map[string]int)
+
+	words := strings.Split(strings.ToLower(input), " ")
+	for _, word := range words {
+		word = strings.Trim(word, "!.,;:?()")
+		if _, ok := result[word]; ok {
+			result[word]++
+		} else {
+			result[word] = 1
+		}
+	}
+
+	return result
 }
