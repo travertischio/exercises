@@ -11,6 +11,8 @@ func main() {
 	fmt.Println(checkPalindrome("racecar"))
 
 	fmt.Println(createWordCloud("We came, we saw, we conquered... then we ate Bill's (Mille-Feuille) cake."))
+
+	fmt.Println(sortScores([]int{4, 100, 6, 28, 80, 56, 90, 90, 90, 90}, 100))
 }
 
 func findOptimalMovies(flightLength int, movieLengths []int) bool {
@@ -57,6 +59,30 @@ func createWordCloud(input string) map[string]int {
 			result[word]++
 		} else {
 			result[word] = 1
+		}
+	}
+
+	return result
+}
+
+func sortScores(unsortedScores []int, highestPossibleScore int) []int {
+	countOfScores := make(map[int]int)
+
+	for _, score := range unsortedScores {
+		if _, ok := countOfScores[score]; ok {
+			countOfScores[score]++
+		} else {
+			countOfScores[score] = 1
+		}
+	}
+
+	var result []int
+	for score := 100; score >= 0; score-- {
+		if _, ok := countOfScores[score]; ok {
+			count := countOfScores[score]
+			for i := 0; i < count; i++ {
+				result = append(result, score)
+			}
 		}
 	}
 
