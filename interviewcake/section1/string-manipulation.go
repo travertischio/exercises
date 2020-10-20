@@ -18,7 +18,6 @@ func main() {
 	alicesOrder := []int{1, 5, 8, 12, 14, 19}
 	fmt.Println(mergeSortedArrays(myOrder, alicesOrder))
 
-
 	takeOutOrders := []int{1, 3, 5}
 	dineInOrders := []int{2, 4, 6}
 	servedOrders := []int{1, 2, 4, 6, 5, 3}
@@ -100,11 +99,11 @@ func mergeSortedArrays(first []int, second []int) []int {
 	return result
 }
 
-func checkServiceOrder(takeOutOrders []int, dineInOrders []int, servedOrders []int) bool  {
+func checkServiceOrder(takeOutOrders []int, dineInOrders []int, servedOrders []int) bool {
 	i := 0
 	j := 0
 
-	for _, e := range(servedOrders) {
+	for _, e := range servedOrders {
 		if takeOutOrders[i] == e {
 			if i < len(takeOutOrders)-1 {
 				i++
