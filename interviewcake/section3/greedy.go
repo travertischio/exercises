@@ -9,6 +9,8 @@ func main() {
 	fmt.Println(getMaxProfit([]int{10, 7, 5, 8, 11, 9}))
 
 	fmt.Println(highestProduct([]int{-10, -10, 1, 3, 2}))
+
+	fmt.Println(getProductOfAllBut([]int{1, 7, 3, 4}))
 }
 
 func getMaxProfit(stockPrices []int) int {
@@ -70,4 +72,22 @@ func highestProduct(arrayOfInts []int) int {
 	}
 
 	return thirdHighestInt * secondHighestInt * highestInt
+}
+
+func getProductOfAllBut(inputArray []int) []int {
+	productsResult := make([]int, len(inputArray))
+
+	currentProduct := 1
+	for index, currentInt := range inputArray {
+		productsResult[index] = currentProduct
+		currentProduct *= currentInt
+	}
+
+	currentProduct = 1
+	for i := len(inputArray) - 1; i >= 0; i-- {
+		productsResult[i] *= currentProduct
+		currentProduct *= inputArray[i]
+	}
+
+	return productsResult
 }
